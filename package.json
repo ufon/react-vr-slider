@@ -1,0 +1,28 @@
+{
+  "name": "react-vr-slider",
+  "version": "1.0.0",
+  "description": "Slider, RangeSlider implementation for ReactVR",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "react": "~15.4.1",
+    "react-native": "~0.42.0",
+    "react-vr": "~1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufon/react-vr-slider.git"
+  },
+  "keywords": [
+    "slider",
+    "react-vr"
+  ],
+  "author": "Postoyalko Anton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ufon/react-vr-slider/issues"
+  },
+  "homepage": "https://github.com/ufon/react-vr-slider#readme"
+}
