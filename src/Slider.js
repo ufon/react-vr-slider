@@ -25,12 +25,14 @@ export default class Slider extends React.Component {
             sliding: false,
             currentBackgroundColor: DEFAULT_HOVER_COLOR
         };
-
+        
+        this.onChange = (typeof this.props.onChange == "function") ? this.props.onChange : () => null;
     }
+
 
     componentDidUpdate() {
 
-        this.props.onChange(this.state.offsetReal);
+        this.onChange(this.state.offsetReal);
 
     }
 

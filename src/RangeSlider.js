@@ -27,13 +27,13 @@ export default class RangeSlider extends React.Component {
         };
 
         this.calcStep = this.calcStep.bind(this);
-
+        this.onChange = (typeof this.props.onChange == "function") ? this.props.onChange : () => null;
     }
 
 
     componentDidUpdate() {
 
-        this.props.onChange(this.state.offsetReal);
+        this.onChange(this.state.offsetReal);
 
     }
 
