@@ -50,7 +50,6 @@ export default class Slider extends React.Component {
         if (this.state.sliding) {
 
             let roundOffset = event.nativeEvent.offset[0] * 100;
-            console.log(roundOffset);
 
             let offsetOuter = this.calcStep(roundOffset, this.state.maxValue);
 
@@ -85,8 +84,9 @@ export default class Slider extends React.Component {
                 });
 
             this.setState({ offset: newOffset });
+
         }
-        //console.log(Math.round(event.nativeEvent.offset[0]*100));
+
     }
 
     interact(event) {

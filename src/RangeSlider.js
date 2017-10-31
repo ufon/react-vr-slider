@@ -58,7 +58,7 @@ export default class RangeSlider extends React.Component {
         if (this.state.sliding) {
 
             let roundOffset = event.nativeEvent.offset[0] * 100;
-            //console.log(roundOffset);
+
 
             if (roundOffset > 50) {
 
@@ -78,7 +78,7 @@ export default class RangeSlider extends React.Component {
             } else if (roundOffset < 50) {
 
                 let offsetInner = this.calcStep(roundOffset, true, this.state.maxValue, this.state.minValue);
-                //console.log(roundOffset, this.state.offsetOuter);
+
                 if ((this.state.offset + this.state.offsetInner) <= this.state.step * -1) {
                     this.setState({
                         offsetInner: this.state.innerCounter * this.state.step,
@@ -131,7 +131,7 @@ export default class RangeSlider extends React.Component {
 
             this.setState({ offset: newOffset, innerCounter: 0 });
         }
-        //console.log(Math.round(event.nativeEvent.offset[0]*100));
+
     }
 
     interact(event) {
